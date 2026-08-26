@@ -1,0 +1,191 @@
+/* -------------------------
+   General Styling
+------------------------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+/* -------------------------
+   Header
+------------------------- */
+
+header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    margin-bottom:15px;
+}
+
+/* -------------------------
+   Navigation (Flexbox)
+------------------------- */
+
+nav{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:10px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#3b82f6;
+}
+
+/* -------------------------
+   Headings
+------------------------- */
+
+h2{
+    text-align:center;
+    margin:30px 0 20px;
+    color:#1e3a8a;
+}
+
+/* -------------------------
+   Grid Layout
+------------------------- */
+
+/* Mobile */
+.grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+/* Tablet */
+@media(min-width:600px){
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* Desktop */
+@media(min-width:900px){
+    .grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+/* -------------------------
+   Cards
+------------------------- */
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* -------------------------
+   Buttons
+------------------------- */
+
+button,
+input[type="submit"]{
+
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:15px;
+    transition:0.3s;
+
+}
+
+button:hover,
+input[type="submit"]:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* -------------------------
+   Form
+------------------------- */
+
+form{
+
+    width:320px;
+    margin:30px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+
+}
+
+label{
+
+    font-weight:bold;
+
+}
+
+input[type="text"]{
+
+    width:100%;
+    padding:10px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+
+}
+
+#message{
+
+    text-align:center;
+    font-size:20px;
+    color:green;
+    margin-top:20px;
+
+}
+
+/* -------------------------
+   Responsive Design
+------------------------- */
+
+@media(min-width:768px){
+
+    nav{
+
+        flex-direction:row;
+        justify-content:center;
+
+    }
+
+    .grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}

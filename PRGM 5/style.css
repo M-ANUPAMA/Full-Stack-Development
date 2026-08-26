@@ -1,0 +1,80 @@
+body{
+
+    font-family: Arial, sans-serif;
+
+    background:#f2f2f2;
+
+    margin:20px;
+
+    text-align:center;
+
+}
+
+h2{
+
+    color:darkblue;
+
+    margin-bottom:20px;
+
+}
+
+button{
+
+    background:darkblue;
+
+    color:white;
+
+    padding:10px 20px;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+button:hover{
+
+    background:navy;
+
+}
+
+table{
+
+    width:80%;
+
+    margin:auto;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    box-shadow:0 0 10px gray;
+
+}
+
+th{
+
+    background:darkblue;
+
+    color:white;
+
+}
+
+th,
+td{
+
+    border:1px solid #ccc;
+
+    padding:10px;
+
+}
+
+tr:nth-child(even){
+
+    background:#f9f9f9;
+
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Dashboard</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<h2>Available Courses</h2>
+
+<div class="grid" id="courseContainer">
+
+    <div class="card">
+        HTML
+        <br><br>
+        <button onclick="removeCard(this)">Remove</button>
+    </div>
+
+    <div class="card">
+        CSS
+        <br><br>
+        <button onclick="removeCard(this)">Remove</button>
+    </div>
+
+    <div class="card">
+        JavaScript
+        <br><br>
+        <button onclick="removeCard(this)">Remove</button>
+    </div>
+
+</div>
+
+<br>
+
+<button onclick="addCourse()">Add Course</button>
+
+<hr>
+
+<h2>Student Form</h2>
+
+<form onsubmit="return submitForm()">
+
+<label>Name</label><br>
+
+<input type="text" id="name">
+
+<br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+<p id="message"></p>
+
+<script src="script.js"></script>
+
+</body>
+</html>

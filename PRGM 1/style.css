@@ -1,0 +1,436 @@
+/* --------------------
+   General Styling
+-------------------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Georgia, serif;
+    background-color:#F8F5F0;
+    color:#333;
+    line-height:1.6;
+    padding-top:160px; /* Prevents content from hiding behind fixed header */
+}
+
+/* --------------------
+   Header
+-------------------- */
+
+header{
+    background:#4B2E2B;
+    color:white;
+    text-align:center;
+    padding:25px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+    color:#f5e6ca;
+}
+
+/* --------------------
+   Navigation
+-------------------- */
+
+nav{
+    margin-top:20px;
+}
+
+nav a{
+
+    text-decoration:none;
+    color:white;
+    margin:0 18px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+
+}
+
+nav a:hover{
+
+    color:#FFD369;
+
+}
+
+/* --------------------
+   Hero Section
+-------------------- */
+
+.hero{
+
+    text-align:center;
+    padding:70px 25px;
+    background:#FFF8E8;
+
+}
+
+.hero h2{
+
+    font-size:36px;
+    color:#5C4033;
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:30px;
+
+}
+
+button{
+
+    background:#6D4C41;
+    color:white;
+    border:none;
+    padding:14px 30px;
+    font-size:17px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+
+}
+
+button:hover{
+
+    background:#3E2723;
+
+}
+
+/* --------------------
+   Book & Author Cards
+-------------------- */
+
+.books{
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:50px 30px;
+
+}
+
+.card{
+
+    width:300px;
+    height:430px;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.3);
+
+    transition:0.4s;
+
+}
+
+.card:hover{
+
+    transform:scale(1.05);
+
+}
+
+.card h3{
+
+    color:#5D4037;
+    margin-bottom:15px;
+    font-size:24px;
+
+}
+
+.card p{
+
+    margin-bottom:10px;
+    font-size:17px;
+
+}
+
+/* --------------------
+   Quote Section
+-------------------- */
+
+.quote{
+
+    background:#EFE7DD;
+    padding:60px 20px;
+    text-align:center;
+
+}
+
+.quote h2{
+
+    color:#5D4037;
+    margin-bottom:20px;
+
+}
+
+blockquote{
+
+    font-size:28px;
+    font-style:italic;
+    color:#444;
+    margin-bottom:15px;
+
+}
+
+.quote p{
+
+    font-size:18px;
+    color:#6D4C41;
+
+}
+
+/* --------------------
+   Contact Page
+-------------------- */
+
+.contact{
+
+    max-width:700px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.contact h2{
+
+    text-align:center;
+    color:#5D4037;
+    margin-bottom:20px;
+
+}
+
+.contact input,
+.contact textarea{
+
+    width:100%;
+    padding:12px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+
+}
+
+.contact textarea{
+
+    resize:vertical;
+    height:150px;
+
+}
+
+.contact button{
+
+    width:100%;
+
+}
+
+/* --------------------
+   Footer
+-------------------- */
+
+footer{
+
+    background:#4B2E2B;
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:30px;
+
+}
+
+/* --------------------
+   Responsive Design
+-------------------- */
+
+@media(max-width:768px){
+
+    body{
+        padding-top:220px;
+    }
+
+    header h1{
+
+        font-size:30px;
+
+    }
+
+    nav{
+
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+
+    }
+
+    nav a{
+
+        margin:0;
+
+    }
+
+    .hero{
+
+        padding:50px 20px;
+
+    }
+
+    .hero h2{
+
+        font-size:28px;
+
+    }
+
+    .hero p{
+
+        font-size:18px;
+
+    }
+
+    .books{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+    .card{
+
+        width:90%;
+
+    }
+
+}
+
+.btn{
+    display:inline-block;
+    background:#6D4C41;
+    color:white;
+    text-decoration:none;
+    padding:14px 30px;
+    font-size:17px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#3E2723;
+}
+
+.pride{
+
+    background-image:url("images/pride.jpg");
+
+}
+
+.sherlock{
+
+    background-image:url("images/sherlock.jpg");
+
+}
+
+.hobbit{
+
+    background-image:url("images/hobbit.jpg");
+
+}
+
+.alchemist{
+
+    background-image:url("images/alchemist.jpg");
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+
+    background:rgba(0,0,0,0.65);
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.overlay h3{
+
+    color:white;
+
+    margin-bottom:10px;
+
+    font-size:24px;
+
+}
+
+.overlay p{
+
+    font-size:17px;
+
+}
+
+/* --------------------
+   Author Images
+-------------------- */
+
+.jane{
+    background-image:url("images/jane.jpg");
+}
+
+.doyle{
+    background-image:url("images/doyle.jpg");
+}
+
+.tolkien{
+    background-image:url("images/tolkien.jpg");
+}
+
+.christie{
+    background-image:url("images/christie.jpg");
+}
+
+.contact-card{
+    height:220px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:white;
+}
+
